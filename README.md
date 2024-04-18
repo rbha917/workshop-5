@@ -48,7 +48,7 @@ text('title', width/3, y);
 function showApples(){
 	for (x = 0; x < table.getRowCount(); x++){
 			let row = table.getRow(x);
-			let countApples = row.get("Apples")
+			let countApples = row.get("Apples");
 			for (y = 0; y < countApples; y++){
 				image(apple, 30 + x * 60, 300  - y * 50, 40, 40);
 			}
@@ -60,7 +60,7 @@ function allFruits(){
 	let xPos = 30;
 	for (x = 0; x < table.getRowCount(); x++){
 			let row = table.getRow(x);
-			let countApples = row.get("Apples")
+			let countApples = row.get("Apples");
 			if (countApples > 0){
 				for (y = 0; y < countApples; y++){
 				image(apple, xPos, 50, 40, 40);
@@ -91,7 +91,7 @@ function allFruits(){
 	let yPos = 50;
 	for (x = 0; x < table.getRowCount(); x++){
 			let row = table.getRow(x);
-			let countApples = row.get("Apples")
+			let countApples = row.get("Apples");
 			if (countApples > 0){
 				for (y = 0; y < countApples; y++){
 				image(apple, xPos, yPos, 40, 40);
